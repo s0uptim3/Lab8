@@ -19,7 +19,7 @@ export const getProductDetails = async (id) => {
 	}
 };
 
-export const removeProducts = async (id) => {
+export const removeProduct = async (id) => {
 	try {
 		const response = await axios.delete(`${BASE_URL}/${id}`);
 		return response.data;
